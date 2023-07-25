@@ -1,24 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VLy-u9-bhO">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item 2-->
+        <scene sceneID="7qE-fV-9zu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="XIH-FC-DO5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CQj-nG-I7h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Ri4-PC-MRt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Zbf-2H-oql"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTe-kF-fhJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="500" y="197"/>
+        </scene>
+        <!--Main Tab View Controller-->
+        <scene sceneID="aSY-jQ-QJj">
+            <objects>
+                <tabBarController id="VLy-u9-bhO" customClass="MainTabViewController" customModule="AlphaVideoiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ohf-BM-a4l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Okb-gF-bO5" kind="relationship" relationship="viewControllers" id="9by-Pj-ugg"/>
+                        <segue destination="XIH-FC-DO5" kind="relationship" relationship="viewControllers" id="SpB-Lg-7ac"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39n-Xs-JlF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405" y="-105"/>
+        </scene>
+        <!--Choose View Controller-->
+        <scene sceneID="zx3-ds-7gp">
+            <objects>
+                <viewController id="cUh-JP-EXe" customClass="ChooseViewController" customModule="AlphaVideoiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qxR-MW-3eP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpK-ZP-5a4">
+                                <rect key="frame" x="150" y="242" width="94" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="透明视频"/>
+                                <connections>
+                                    <segue destination="i0h-pw-2AY" kind="show" id="T5Q-D7-cZO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfo-w6-ZJM">
+                                <rect key="frame" x="167" y="409" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="视频"/>
+                                <connections>
+                                    <segue destination="990-v4-Z0e" kind="show" id="euX-DO-jau"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PR-kR-5I1">
+                                <rect key="frame" x="170" y="580" width="53" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="pag"/>
+                                <connections>
+                                    <segue destination="hfw-rh-VNe" kind="show" id="jIa-oV-JW3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Rj-mT-rKN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Jn-LI-aWz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMI-Kf-bpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417.5572519083969" y="-545.07042253521126"/>
+        </scene>
+        <!--Transparent Video View Controller-->
+        <scene sceneID="IzW-h9-wb7">
+            <objects>
+                <viewController id="i0h-pw-2AY" customClass="TransparentVideoViewController" customModule="AlphaVideoiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5HN-bZ-pMf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sD-l9-eKa" customClass="SLPTransparentVideoView" customModule="AlphaVideoiOSDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="393"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8sD-l9-eKa" secondAttribute="height" multiplier="1:1" id="O6T-Rj-3Bi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gKh-QP-L6r"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="8sD-l9-eKa" firstAttribute="leading" secondItem="gKh-QP-L6r" secondAttribute="leading" id="IOH-4i-5T4"/>
+                            <constraint firstItem="8sD-l9-eKa" firstAttribute="top" secondItem="gKh-QP-L6r" secondAttribute="top" id="Woj-vk-DOS"/>
+                            <constraint firstItem="gKh-QP-L6r" firstAttribute="trailing" secondItem="8sD-l9-eKa" secondAttribute="trailing" id="iqb-QP-k1E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="qsO-Cg-O1O"/>
+                    <connections>
+                        <outlet property="videoView" destination="8sD-l9-eKa" id="hFd-Nl-4jZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XnH-uG-YXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="-690"/>
+        </scene>
+        <!--Pag View Controller-->
+        <scene sceneID="OU3-h9-gM9">
+            <objects>
+                <viewController id="hfw-rh-VNe" customClass="PagViewController" customModule="AlphaVideoiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HML-j2-aEz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqX-8T-JbS">
+                                <rect key="frame" x="0.0" y="103" width="393" height="393"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uqX-8T-JbS" secondAttribute="height" id="UPP-oR-NXA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kUt-vX-RUh"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uqX-8T-JbS" firstAttribute="top" secondItem="kUt-vX-RUh" secondAttribute="top" id="ALP-2A-07f"/>
+                            <constraint firstItem="kUt-vX-RUh" firstAttribute="trailing" secondItem="uqX-8T-JbS" secondAttribute="trailing" id="fEg-xb-Ybk"/>
+                            <constraint firstItem="uqX-8T-JbS" firstAttribute="leading" secondItem="kUt-vX-RUh" secondAttribute="leading" id="qn9-QT-VgP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="znW-Ml-449"/>
+                    <connections>
+                        <outlet property="pagContainerView" destination="uqX-8T-JbS" id="Fgk-bF-267"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fC-CO-eYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223" y="88"/>
+        </scene>
+        <!--Solid Video View Controller-->
+        <scene sceneID="b0P-vw-DKp">
+            <objects>
+                <viewController id="990-v4-Z0e" customClass="SolidVideoViewController" customModule="AlphaVideoiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bMR-jk-rN1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aom-KG-RUx">
+                                <rect key="frame" x="0.0" y="103" width="393" height="393"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aom-KG-RUx" secondAttribute="height" id="sFo-2W-8sy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pig-3w-rdW"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="aom-KG-RUx" firstAttribute="leading" secondItem="pig-3w-rdW" secondAttribute="leading" id="AgU-88-G9N"/>
+                            <constraint firstItem="pig-3w-rdW" firstAttribute="trailing" secondItem="aom-KG-RUx" secondAttribute="trailing" id="Lgp-9Y-jww"/>
+                            <constraint firstItem="aom-KG-RUx" firstAttribute="top" secondItem="pig-3w-rdW" secondAttribute="top" id="oKm-EX-jUT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="yUq-Uz-M6g"/>
+                    <connections>
+                        <outlet property="videoContainerView" destination="aom-KG-RUx" id="4Jn-C6-0P1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eT-8k-x6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3210" y="-377"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="wGH-Q3-th5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Okb-gF-bO5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="elX-19-Fk9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kIY-hY-mHI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cUh-JP-EXe" kind="relationship" relationship="rootViewController" id="OfW-di-Qn9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyS-Hn-Q2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490.83969465648852" y="-545.07042253521126"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

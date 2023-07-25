@@ -6,4 +6,7 @@ target 'AlphaVideoiOSDemo' do
   use_frameworks!
 
   pod 'AlphaVideoiOS', :path=>'../../'
+  pod 'Aspects'
+  pod 'libpag', '3.2.7.34'
+  
 end

@@ -1,8 +1,17 @@
 PODS:
   - AlphaVideoiOS (0.0.1)
+  - Aspects (1.4.1)
+  - libpag (3.2.7.34)
 
 DEPENDENCIES:
   - AlphaVideoiOS (from `../../`)
+  - Aspects
+  - libpag (= 3.2.7.34)
+
+SPEC REPOS:
+  trunk:
+    - Aspects
+    - libpag
 
 EXTERNAL SOURCES:
   AlphaVideoiOS:
@@ -10,7 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AlphaVideoiOS: f35ad0f6dfb57313d5720c982f35964f2500648c
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  libpag: f51d88c0bbb010759a971cce2a02e0cd0a316f6a
 
-PODFILE CHECKSUM: 2bff87dce5c03263e3bc91fd5fd473f75f88914d
+PODFILE CHECKSUM: 7a56a9ae615e72df974f379b35aba736ea42a3b6
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.11.3

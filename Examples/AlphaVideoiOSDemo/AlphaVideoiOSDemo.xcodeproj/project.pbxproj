@@ -3,12 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8997CEBD2A6F781A006B9E97 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CEBC2A6F781A006B9E97 /* MainTabViewController.swift */; };
+		8997CEBF2A6F7861006B9E97 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CEBE2A6F7861006B9E97 /* ChooseViewController.swift */; };
+		8997CEC12A6F78A5006B9E97 /* TransparentVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CEC02A6F78A5006B9E97 /* TransparentVideoViewController.swift */; };
+		8997CEC42A6F797E006B9E97 /* SLPTransparentVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CEC32A6F797E006B9E97 /* SLPTransparentVideoView.swift */; };
+		8997CEC92A6F7A51006B9E97 /* solid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8997CEC62A6F7A51006B9E97 /* solid.mp4 */; };
+		8997CECA2A6F7A51006B9E97 /* transparent.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8997CEC72A6F7A51006B9E97 /* transparent.mp4 */; };
+		8997CECB2A6F7A51006B9E97 /* reference.pag in Resources */ = {isa = PBXBuildFile; fileRef = 8997CEC82A6F7A51006B9E97 /* reference.pag */; };
+		8997CECD2A6F7E13006B9E97 /* SolidVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CECC2A6F7E13006B9E97 /* SolidVideoViewController.swift */; };
+		8997CECF2A6F7EC3006B9E97 /* PagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CECE2A6F7EC3006B9E97 /* PagViewController.swift */; };
 		E603C7C2229A31E000AC12B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603C7C1229A31E000AC12B9 /* AppDelegate.swift */; };
-		E603C7C4229A31E000AC12B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603C7C3229A31E000AC12B9 /* ViewController.swift */; };
 		E603C7C7229A31E000AC12B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E603C7C5229A31E000AC12B9 /* Main.storyboard */; };
 		E603C7C9229A31E100AC12B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E603C7C8229A31E100AC12B9 /* Assets.xcassets */; };
 		E603C7CC229A31E100AC12B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E603C7CA229A31E100AC12B9 /* LaunchScreen.storyboard */; };
@@ -18,11 +26,19 @@
 
 /* Begin PBXFileReference section */
 		2916CB4788EE9626B60FEDE0 /* Pods-AlphaVideoiOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaVideoiOSDemo.release.xcconfig"; path = "Target Support Files/Pods-AlphaVideoiOSDemo/Pods-AlphaVideoiOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8997CEBC2A6F781A006B9E97 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		8997CEBE2A6F7861006B9E97 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		8997CEC02A6F78A5006B9E97 /* TransparentVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentVideoViewController.swift; sourceTree = "<group>"; };
+		8997CEC32A6F797E006B9E97 /* SLPTransparentVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLPTransparentVideoView.swift; sourceTree = "<group>"; };
+		8997CEC62A6F7A51006B9E97 /* solid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = solid.mp4; sourceTree = "<group>"; };
+		8997CEC72A6F7A51006B9E97 /* transparent.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = transparent.mp4; sourceTree = "<group>"; };
+		8997CEC82A6F7A51006B9E97 /* reference.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = reference.pag; sourceTree = "<group>"; };
+		8997CECC2A6F7E13006B9E97 /* SolidVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidVideoViewController.swift; sourceTree = "<group>"; };
+		8997CECE2A6F7EC3006B9E97 /* PagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagViewController.swift; sourceTree = "<group>"; };
 		B092E1A7CA1B65E0114E07D8 /* Pods-AlphaVideoiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaVideoiOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-AlphaVideoiOSDemo/Pods-AlphaVideoiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B4EAD4919AFFCFBA1E957F26 /* Pods_AlphaVideoiOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaVideoiOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E603C7BE229A31E000AC12B9 /* AlphaVideoiOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaVideoiOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E603C7C1229A31E000AC12B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E603C7C3229A31E000AC12B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E603C7C6229A31E000AC12B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E603C7C8229A31E100AC12B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E603C7CB229A31E100AC12B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +75,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8997CEC22A6F795F006B9E97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8997CEC32A6F797E006B9E97 /* SLPTransparentVideoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8997CEC52A6F7A1D006B9E97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8997CEC82A6F7A51006B9E97 /* reference.pag */,
+				8997CEC62A6F7A51006B9E97 /* solid.mp4 */,
+				8997CEC72A6F7A51006B9E97 /* transparent.mp4 */,
+				E603C7DD229A763800AC12B9 /* playdoh-bat.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E603C7B5229A31E000AC12B9 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +115,18 @@
 		E603C7C0229A31E000AC12B9 /* AlphaVideoiOSDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E603C7DD229A763800AC12B9 /* playdoh-bat.mp4 */,
+				8997CEC52A6F7A1D006B9E97 /* Resources */,
+				8997CEC22A6F795F006B9E97 /* View */,
 				E603C7C1229A31E000AC12B9 /* AppDelegate.swift */,
-				E603C7C3229A31E000AC12B9 /* ViewController.swift */,
 				E603C7C5229A31E000AC12B9 /* Main.storyboard */,
 				E603C7C8229A31E100AC12B9 /* Assets.xcassets */,
 				E603C7CA229A31E100AC12B9 /* LaunchScreen.storyboard */,
 				E603C7CD229A31E100AC12B9 /* Info.plist */,
+				8997CEBC2A6F781A006B9E97 /* MainTabViewController.swift */,
+				8997CEBE2A6F7861006B9E97 /* ChooseViewController.swift */,
+				8997CEC02A6F78A5006B9E97 /* TransparentVideoViewController.swift */,
+				8997CECC2A6F7E13006B9E97 /* SolidVideoViewController.swift */,
+				8997CECE2A6F7EC3006B9E97 /* PagViewController.swift */,
 			);
 			path = AlphaVideoiOSDemo;
 			sourceTree = "<group>";
@@ -151,8 +191,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8997CECA2A6F7A51006B9E97 /* transparent.mp4 in Resources */,
 				E603C7CC229A31E100AC12B9 /* LaunchScreen.storyboard in Resources */,
 				E603C7C9229A31E100AC12B9 /* Assets.xcassets in Resources */,
+				8997CEC92A6F7A51006B9E97 /* solid.mp4 in Resources */,
+				8997CECB2A6F7A51006B9E97 /* reference.pag in Resources */,
 				E603C7C7229A31E000AC12B9 /* Main.storyboard in Resources */,
 				E603C7DE229A763800AC12B9 /* playdoh-bat.mp4 in Resources */,
 			);
@@ -207,8 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E603C7C4229A31E000AC12B9 /* ViewController.swift in Sources */,
+				8997CECD2A6F7E13006B9E97 /* SolidVideoViewController.swift in Sources */,
+				8997CECF2A6F7EC3006B9E97 /* PagViewController.swift in Sources */,
+				8997CEC12A6F78A5006B9E97 /* TransparentVideoViewController.swift in Sources */,
+				8997CEC42A6F797E006B9E97 /* SLPTransparentVideoView.swift in Sources */,
+				8997CEBF2A6F7861006B9E97 /* ChooseViewController.swift in Sources */,
 				E603C7C2229A31E000AC12B9 /* AppDelegate.swift in Sources */,
+				8997CEBD2A6F781A006B9E97 /* MainTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
