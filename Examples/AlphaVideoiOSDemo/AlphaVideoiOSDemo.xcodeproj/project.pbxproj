@@ -16,6 +16,9 @@
 		8997CECB2A6F7A51006B9E97 /* reference.pag in Resources */ = {isa = PBXBuildFile; fileRef = 8997CEC82A6F7A51006B9E97 /* reference.pag */; };
 		8997CECD2A6F7E13006B9E97 /* SolidVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CECC2A6F7E13006B9E97 /* SolidVideoViewController.swift */; };
 		8997CECF2A6F7EC3006B9E97 /* PagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997CECE2A6F7EC3006B9E97 /* PagViewController.swift */; };
+		89A5F4E32A71FAD700FF21D4 /* OpenSSLWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 89A5F4E12A71FAD700FF21D4 /* OpenSSLWrapper.mm */; };
+		89A5F4E52A71FC2D00FF21D4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A5F4E42A71FC2D00FF21D4 /* libcrypto.a */; };
+		89A5F4E72A71FC3A00FF21D4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A5F4E62A71FC3A00FF21D4 /* libssl.a */; };
 		E603C7C2229A31E000AC12B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603C7C1229A31E000AC12B9 /* AppDelegate.swift */; };
 		E603C7C7229A31E000AC12B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E603C7C5229A31E000AC12B9 /* Main.storyboard */; };
 		E603C7C9229A31E100AC12B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E603C7C8229A31E100AC12B9 /* Assets.xcassets */; };
@@ -35,6 +38,11 @@
 		8997CEC82A6F7A51006B9E97 /* reference.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = reference.pag; sourceTree = "<group>"; };
 		8997CECC2A6F7E13006B9E97 /* SolidVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidVideoViewController.swift; sourceTree = "<group>"; };
 		8997CECE2A6F7EC3006B9E97 /* PagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagViewController.swift; sourceTree = "<group>"; };
+		89A5F4DD2A71F99400FF21D4 /* AlphaVideoiOSDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlphaVideoiOSDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		89A5F4E12A71FAD700FF21D4 /* OpenSSLWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenSSLWrapper.mm; sourceTree = "<group>"; };
+		89A5F4E22A71FAD700FF21D4 /* OpenSSLWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenSSLWrapper.hpp; sourceTree = "<group>"; };
+		89A5F4E42A71FC2D00FF21D4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "openssl-1.0.1e/lib/libcrypto.a"; sourceTree = "<group>"; };
+		89A5F4E62A71FC3A00FF21D4 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "openssl-1.0.1e/lib/libssl.a"; sourceTree = "<group>"; };
 		B092E1A7CA1B65E0114E07D8 /* Pods-AlphaVideoiOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaVideoiOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-AlphaVideoiOSDemo/Pods-AlphaVideoiOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B4EAD4919AFFCFBA1E957F26 /* Pods_AlphaVideoiOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaVideoiOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E603C7BE229A31E000AC12B9 /* AlphaVideoiOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaVideoiOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A5F4E72A71FC3A00FF21D4 /* libssl.a in Frameworks */,
+				89A5F4E52A71FC2D00FF21D4 /* libcrypto.a in Frameworks */,
 				FA03DD18E0258990F7FE5B2C /* Pods_AlphaVideoiOSDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +80,8 @@
 		792F3B492CE3135579E4E700 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89A5F4E62A71FC3A00FF21D4 /* libssl.a */,
+				89A5F4E42A71FC2D00FF21D4 /* libcrypto.a */,
 				B4EAD4919AFFCFBA1E957F26 /* Pods_AlphaVideoiOSDemo.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +139,9 @@
 				8997CEC02A6F78A5006B9E97 /* TransparentVideoViewController.swift */,
 				8997CECC2A6F7E13006B9E97 /* SolidVideoViewController.swift */,
 				8997CECE2A6F7EC3006B9E97 /* PagViewController.swift */,
+				89A5F4E12A71FAD700FF21D4 /* OpenSSLWrapper.mm */,
+				89A5F4E22A71FAD700FF21D4 /* OpenSSLWrapper.hpp */,
+				89A5F4DD2A71F99400FF21D4 /* AlphaVideoiOSDemo-Bridging-Header.h */,
 			);
 			path = AlphaVideoiOSDemo;
 			sourceTree = "<group>";
@@ -165,6 +180,7 @@
 				TargetAttributes = {
 					E603C7BD229A31E000AC12B9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -250,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A5F4E32A71FAD700FF21D4 /* OpenSSLWrapper.mm in Sources */,
 				8997CECD2A6F7E13006B9E97 /* SolidVideoViewController.swift in Sources */,
 				8997CECF2A6F7EC3006B9E97 /* PagViewController.swift in Sources */,
 				8997CEC12A6F78A5006B9E97 /* TransparentVideoViewController.swift in Sources */,
@@ -403,16 +420,30 @@
 			baseConfigurationReference = B092E1A7CA1B65E0114E07D8 /* Pods-AlphaVideoiOSDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A75DREAB8;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlphaVideoiOS/AlphaVideoiOS.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Aspects/Aspects.framework/Headers\"",
+					"\"$(SRCROOT)/openssl-1.0.1e/include\"/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = AlphaVideoiOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl-1.0.1e/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvpengwei.AlphaVideoiOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlphaVideoiOSDemo/AlphaVideoiOSDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,16 +454,28 @@
 			baseConfigurationReference = 2916CB4788EE9626B60FEDE0 /* Pods-AlphaVideoiOSDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A75DREAB8;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlphaVideoiOS/AlphaVideoiOS.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Aspects/Aspects.framework/Headers\"",
+					"\"$(SRCROOT)/openssl-1.0.1e/include\"",
+				);
 				INFOPLIST_FILE = AlphaVideoiOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl-1.0.1e/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvpengwei.AlphaVideoiOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlphaVideoiOSDemo/AlphaVideoiOSDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
